@@ -22,7 +22,7 @@
             </nav>
             <div class="header-text">
                 <p>Java Full Stack Developer</p>
-                <h1>Hi,I'm <span id="e">Nevil</span> <br>Paul From Bengaluru</h1>
+                <h1>Hi,I'm <span id="e">Nevil</span> Paul  <br>From TamilNadu,India</h1>
             </div>
         </div>
     </div>
@@ -71,5 +71,20 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
 </body>
 </html>
